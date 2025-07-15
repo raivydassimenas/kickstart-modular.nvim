@@ -2,8 +2,7 @@ return {
   'williamboman/mason-lspconfig.nvim',
   dependencies = { 'mason-org/mason.nvim' },
   opts = {
-    'lua_ls',
-    'pyright',
-    'tsserver',
+    ensure_installed = { 'jdtls', 'lus_ls', 'pyright', 'tsserver' },
+    automatic_installation = true,
   },
 }
